@@ -1,0 +1,105 @@
+/* Container styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem 2rem;
+}
+
+/* Logo styling */
+.nav-logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Remove default list bullets and arrange horizontally */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+/* Individual link styling */
+.nav-links a {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+/* Interactive hover effects */
+.nav-links a:hover {
+  color: #04AA6D;
+}
+
+/* Styling for current active page */
+.nav-links a.active {
+  color: #04AA6D;
+  font-weight: bold;
+}
+
+
+.pam_head{
+    color: rgb(187, 60, 22);
+}
+
+.pac_head{
+    color: rgb(187, 60, 22);
+}
+
+/* Selects your links only when a mouse hovers over them */
+.nav-links a:hover {
+  color: #ff7878;            /* Changes text color to green */
+  text-decoration: underline; /* Adds an underline effect */
+}
+
+/* Your base link style */
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  
+  /* ADD THIS LINE FOR SMOOTHNESS */
+  transition: color 0.5s ease; /* Fades the color over 0.3 seconds */
+}
+
+/* The Grid Container */
+.topics-grid {
+  display: grid;
+  /* This creates 3 equal columns that automatically adjust */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; /* Puts an even gap between all rows and columns */
+  margin-top: 20px;
+}
+
+/* Individual Card Styling */
+.topic-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid rgb(187, 60, 22); /* Matches your heading color */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.topic-card h4 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.topic-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.topic-card:hover{
+    /* Lifts the card UP by 10 pixels on the Y-axis */
+  transform: translateY(-10px) scale(1.04); 
+  
+  /* Makes the shadow larger and softer, creating a "floating" illusion */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); 
+  
+  /* Optional: Makes the cursor turn into a pointer hand */
+  cursor: pointer;
+}
